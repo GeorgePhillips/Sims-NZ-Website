@@ -1,0 +1,17 @@
+---
+layout: products
+---
+
+{{ content }}
+
+<ul class="product-list">
+	{% for product in site.collections[page.collection].docs %}
+	    <li>
+	    	<h3><a href="{{ product.url }}">{{ product.title | xml_escape }}</a></h3>
+	    	{% if product.thumbs_path %}
+	    		<img src="{{ product.thumbs_path }}" alt="{{ product.title | xml_escape }}">
+	    	{% endif %}
+	    	<p>{{ product.description | xml_escape }}</p>
+	    </li>
+  	{% endfor %}
+</ul>

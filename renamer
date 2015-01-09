@@ -1,0 +1,17 @@
+#! /bin/bash
+shopt -s extglob
+TARGET=/target
+SRC=/source
+( while : ; do
+    inotifywait -m -r -r close_write --format %f -q \
+        $SRC | while read F ; do
+    basename=${F##*/}                               # Remove everything before /
+    ext=${basename##*.}                             # Remove everything before .
+    basename=${basename%.$ext}                      # Remove .$ext at the end
+    if [[ $ext == @(JPG|JPEG|jpeg) ]] ; then        # Match any of the words
+        ext=jpg
+    fi
+    echo mv "$F" "$TARGET/$basename.$ext"
+
+        done
+  done ) &

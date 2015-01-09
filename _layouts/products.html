@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section>
+	<div class="container">
+		<ul id="products-sub-nav">
+			{% for collection in site.collections %}
+			    <li>
+			    	<a href="/products/{{ collection[0] }}">{{ collection[1].name | capitalize }}</a>
+
+			    	{% if page.collection == collection[0] %}
+				    	<ul>
+							{% for product in collection[1].docs %}
+								<li><a href="{{ product.url }}">{{ product.title | xml_escape }}</a></li>
+							{% endfor %}
+						</ul>
+			    	{% endif %}
+			    </li>
+		  	{% endfor %}
+		</ul>
+
+		<div id="products-content">
+			{{ content }}
+		</div>
+	</div>
+</section>
+
+

@@ -1,0 +1,37 @@
+collections:
+  ppd:
+    name: Picket Post Driver
+    output: true
+  universallifters:
+    name: Universal Lifters
+    output: true
+  compressors:
+    name: Compressors
+    output: true
+  strainers:
+    name: Strong~As Strainers
+    output: true
+  clipgun:
+    name: Air operated clip gun
+    output: true
+  wire:
+    name: Polyester Wire
+    output: true
+  polydroppers:
+    name: Polydroppers
+    output: true
+  spiralfast:
+    name: Spiralfast System
+    output: true
+  vinstakes:
+    name: Vinstakes
+    output: true
+  biostim:
+    name: Bio-Stim
+    output: true
+  vineyardaccessories:
+    name: Vineyard Accessories
+    output: true
+  irrigationaccessories:
+    name: Irrigation Accessories
+    output: true

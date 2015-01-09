@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sims New Zealand, suppliers of vineyard trellising equipment.">
+    <meta name="author" content="">
+    <meta name="keywords" content="vinstakes, irrigation, tension ties, hand rammmers, vineyards, spiralfast Tension Ties, viticultural supplies, New Zealand, metal stakes, grapevines, wire ties, prudent trellis clips, fencing supplies, steel stakes, metal posts, hose, pipe,  vineyard posts, wine bags, irrigation hose, organic, trellising equipment, irrigation fittings, simes-senco irrigation fastening systems, BYO Wine bags, tree guards, rural fencing supplies, organic vineyard needs, steel posts, poly sprayguards, vineguards">
+
+    <title>Sims New Zealand | {{ page.title }}</title>
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="/">Sims New Zealand</a></h1>
+
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero thin-hero">
+        <div class="container">
+            <h2 class="editable">
+              {% if page.header %} 
+                {{ page.header }}
+              {% else %}
+                {{ page.title }}
+              {% endif %}
+            </h2>
+        </div>
+    </div>
+
+        {{ content }}
+    
+    <footer>
+      <div class="container">
+      <p><a href="#">Back to top</a></p>
+      <p class="copyright">&copy; 2013 Sims NZ, Inc.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
