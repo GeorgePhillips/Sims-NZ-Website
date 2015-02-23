@@ -9,7 +9,7 @@ collections:
     name: Compressors
     output: true
   strainers:
-    name: Strong~As Strainers
+    name: Strainers
     output: true
   clipgun:
     name: Air operated clip gun
