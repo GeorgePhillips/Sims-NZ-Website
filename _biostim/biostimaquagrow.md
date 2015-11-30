@@ -3,9 +3,6 @@ layout: products
 title: BioStim Aqua Plant Grow
 thumbs_path: /img/thumbs/biostim.jpeg
 description: This unique organic fish emulsion provides the crucial balance of the four main minerals required to maintain luxuriant growth.
-dogs:
-- Beans
-- Peanut
 ---
 
 ![The Biostim Logo](/img/large/Biostim1.jpeg)
